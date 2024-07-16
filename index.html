@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+        *
+        {
+            padding: 0px;
+            margin: 0px;
+        }
+        body{
+            background: url(im2.jpg);
+            
+            object-fit: cover;
+        }
+        nav
+        {
+            display: flex;
+            margin: 0px;
+            padding: 30px;
+            font-size: 20px;
+            color:black ;
+            gap: 20px;
+            justify-content: center;
+            font-family: "Josefin Sans", sans-serif;
+           
+            background-color: rgb(255, 255, 255);
+            
+        }
+       .cont
+       {
+        width: 100dvh;
+        height: 470px;
+        background-color: rgb(223, 229, 231);
+        padding: 30px;
+        margin: 20px;
+        border-radius: 10px;
+        display: flex;
+        gap: 20px;
+       }
+       .container 
+       {
+        width: 300px;
+        height: 72vh;
+        background-color: white;
+        border-radius: 10px;
+        overflow: hidden;
+       }
+       .container img 
+       {
+        width: 276px;
+        padding: 10px;
+        height: 300px;
+        border-radius: 20px;
+      
+       }
+       .container h4 
+       {
+        text-align: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        padding: 10px;
+       }
+       .bb button 
+       {
+        justify-content: center;
+       height: 50px;
+        width: 65px;
+        border: none;
+        color: wheat;
+        font-size: 30px;
+        color:orange ;
+        background: none;
+        outline: none;
+
+       }
+
+       .bb 
+       {
+        width: 300px;
+        height: 45px;
+        display: flex;
+     
+        padding: 10px;
+        gap: 06px;
+       
+       }
+       .container span
+       {
+           font-size: 20px;
+               margin-top:-10px;
+           padding-right: 10px;
+           justify-content: center;
+           display: flex;
+           color: gold;
+           font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+       }
+       @media only screen and (max-width:620px) {
+        .cont
+       {
+        width: 300px;
+        height: auto;
+        background-color: rgb(223, 229, 231);
+        padding: 25px;
+        margin: 20px;
+        border-radius: 10px;
+        display: grid;
+        gap: 20px;
+       }
+       nav 
+       {
+        font-size: 10px;
+       }
+       }
+  
+    </style>
+
+    <nav>
+        <ol>Home</ol>
+        <ol>Service</ol>
+        <ol>Products</ol>
+        <ol>Sigin</ol>
+        <ol>Login</ol>
+        <a href="music.html">Music</a>
+    </nav>
+ 
+ <div class="cont">
+    <div class="container">
+     <h4>Raayan song</h4><br>
+    <img src="so1.jpg">
+    <audio id="player" src="ada.mp3"></audio>
+    <div class="bb"> 
+      <button onclick="document.getElementById('player').play()"><ion-icon name="play-circle-outline"></ion-icon></button>
+      <button onclick="document.getElementById('player').pause()"><ion-icon name="pause-circle-outline"></ion-icon></button>
+      <button onclick="document.getElementById('player').volume += 0.1"><ion-icon name="volume-medium-outline"></ion-icon></button> 
+      <button onclick="document.getElementById('player').volume -= 0.1"><ion-icon name="volume-low-outline"></ion-icon></button> 
+    </div>
+    <span>Rating:★★★✰✰</span>
+    </div>
+
+    <div class="container">
+        <h4>pushpa 2 song</h4><br>
+       <img src="P.jpg">
+       <audio id="player1" src="pushpa.mp3"></audio>
+       <div class="bb"> 
+         <button onclick="document.getElementById('player1').play()"><ion-icon name="play-circle-outline"></ion-icon></button>
+         <button onclick="document.getElementById('player1').pause()"><ion-icon name="pause-circle-outline"></ion-icon></button>
+         <button onclick="document.getElementById('player1').volume += 0.1"><ion-icon name="volume-medium-outline"></ion-icon></button> 
+         <button onclick="document.getElementById('player1').volume -= 0.1"><ion-icon name="volume-low-outline"></ion-icon></button> 
+       </div><span>Rating:★★★★✰</span>
+   
+       </div>
+
+       <div class="container">
+        <h4>Master</h4><br>
+       <img src="master.jpg">
+       <audio id="player2" src="vathi.mp3"></audio>
+       <div class="bb"> 
+         <button onclick="document.getElementById('player2').play()"><ion-icon name="play-circle-outline"></ion-icon></button>
+         <button onclick="document.getElementById('player2').pause()"><ion-icon name="pause-circle-outline"></ion-icon></button>
+         <button onclick="document.getElementById('player2').volume += 0.1"><ion-icon name="volume-medium-outline"></ion-icon></button> 
+         <button onclick="document.getElementById('player2').volume -= 0.1"><ion-icon name="volume-low-outline"></ion-icon></button> 
+       </div><span>Rating:★★✰✰✰</span>
+   
+       </div>
+
+       <div class="container">
+        <h4>leo song</h4><br>
+       <img src="vijay.jpg">
+       <audio id="player3" src="master.mp3"></audio>
+       <div class="bb"> 
+         <button onclick="document.getElementById('player3').play()"><ion-icon name="play-circle-outline"></ion-icon></button>
+         <button onclick="document.getElementById('player3').pause()"><ion-icon name="pause-circle-outline"></ion-icon></button>
+         <button onclick="document.getElementById('player3').volume += 0.1"><ion-icon name="volume-medium-outline"></ion-icon></button> 
+         <button onclick="document.getElementById('player3').volume -= 0.1"><ion-icon name="volume-low-outline"></ion-icon></button> <br>
+         
+        </div><span>Rating:★★★★★</span>
+       
+       </div>
+
+ </div>
+    <script>
+      
+        </script>
+
+</body>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</html>
